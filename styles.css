@@ -2211,3 +2211,11 @@ textarea {
   background: url("images/special-event.png") center center no-repeat;
   background-size: contain;
 }
+
+.rail-item a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+
+}

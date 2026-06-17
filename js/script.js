@@ -104,4 +104,6 @@ document.querySelectorAll(".more-btn").forEach(btn => {
   });
 });
 
-
+function goToForm() {
+  window.location.href = "formularz.html";
+}
