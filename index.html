@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNU – Chrześcijanie na Uczelniach</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav id="mainNav">
+    <div class="nav-left">
+      <div class="lang-switcher">
+        <button data-lang="en" onclick="setLang('en')" id="lang-en">EN</button>
+        <span>|</span>
+        <button data-lang="pl" onclick="setLang('pl')" id="lang-pl">PL</button>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" data-i18n="home">Home</a>
+        <a href="formularz.html" data-i18n="form">Form</a>
+        <a href="about.html" data-i18n="about">About</a>
+        <a href="events.html" data-i18n="events">Events</a>
+        <a href="special-event.html" data-i18n="special-event">Wydarzenie specjalne</a>
+      </div>
+
+      <button class="burger" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+
+    <div class="hero-bg active"></div>
+    <div class="hero-bg"></div>
+
+    <div class="hero-overlay">
+      <h1>CNU</h1>
+      <p>Chrześcijanie na Uczelniach</p>
+      <button onclick="location.href='formularz.html'" class="cta-btn-onmain" data-i18n="contact">SKONTAKTUJ SIĘ Z
+        NAMI</button>
+    </div>
+
+  </header>
+
+  <section class="hero-description">
+    <div class="wave-text"> <!-- for wave effect -->
+      <p data-i18n="title"></p>
+      <p data-i18n="title-2"></p>
+      <p data-i18n="contact"></p>
+    </div>
+    <div class="center">
+      <button onclick="location.href='about.html'" class="cta-btn" style="background-color: #0e3a5a;"
+        data-i18n="about">o nas</button>
+    </div>
+  </section>
+
+  <section class="verse-section">
+    <blockquote class="verse-text">
+      <span class="quote quote-open">“</span>
+      <p data-i18n="werset-2tym2:22">
+        Uciekaj zaś przed młodzieńczymi pożądaniami,
+        a dąż do <strong>sprawiedliwości</strong>,
+        <strong>wiary</strong>,
+        <strong>miłości</strong> i
+        <strong>pokoju</strong> —
+        wraz <strong>z tymi</strong>, którzy <b>wzywają imienia Pana
+          z czystego serca.</b>
+      </p>
+      <span class="quote quote-close">”</span>
+      <footer>
+        2 Tymoteusza 2:22
+      </footer>
+    </blockquote>
+  </section>
+
+  <div class="center-header">
+    <h1 data-i18n="meetings">Nasza wizja</h1>
+  </div>
+
+  <section class="meetings-containers">
+
+    <p data-i18n="about-us-description-4"></p><!--tutaj niech będzie w jednym bloku (moze o innym kolorze tło) "wspólnie
+    podążac za chrystusem - innym kolorem/wydzielone" -->
+    <img src="images/book.png" class="side-image-right" style="top: 50px" alt="Cross">
+    <div class="meeting-card">
+      <div class="meeting-title" data-i18n="bible-study-meeting-title">
+        Studiowanie Biblii na kampusie
+      </div>
+      <div class="meeting-text collapsed" id="meetingText">
+        <p data-i18n="bible-study-meeting-description-1"></p>
+        <p data-i18n="bible-study-meeting-description-2"></p>
+        <p data-i18n="bible-study-meeting-description-3"></p>
+      </div>
+      <button class="more-btn" id="toggleBtn">
+        Więcej
+      </button>
+      <div class="center">
+        <button onclick="location.href='formularz.html'" class="cta-btn" data-i18n="form">formularz</button>
+      </div>
+    </div>
+
+    <img src="images/pizza.png" class="side-image-left" style="top: 400px; transform: scale(1.8);" alt="Cross">
+    <div class="meeting-card">
+      <div class="meeting-title" data-i18n="student-meeting-title">
+        Spotkania studenckie
+      </div>
+      <p data-i18n="student-meeting-description-1"></p>
+      <p data-i18n="student-meeting-description-2"></p>
+      <div class="center">
+        <button onclick="location.href='formularz.html'" class="cta-btn" data-i18n="form">formularz</button>
+      </div>
+    </div>
+
+    <img src="images/mug.png" class="side-image-right" style="top: 750px; transform: scale(1.8);" alt="Cross">
+
+
+
+    <div class="meeting-card">
+      <div class="meeting-title" data-i18n="home-meeting-title">
+        Spotkania domowe
+      </div>
+      <div class="meeting-text collapsed" id="meetingText">
+
+        <p data-i18n="home-meeting-description-1"></p>
+        <p data-i18n="home-meeting-description-2"></p>
+        <p data-i18n="home-meeting-description-7"></p>
+      </div>
+      <button class="more-btn" id="toggleBtn">
+        Więcej
+      </button>
+      <div class="center">
+        <button onclick="location.href='formularz.html'" class="cta-btn" data-i18n="form">formularz</button>
+      </div>
+
+    </div>
+
+  </section>
+  <div class="center" style="background-color: rgb(196, 221, 255);">
+    <button onclick="location.href='about.html'" class="cta-btn" style="  margin-bottom: 40px;"
+      data-i18n="know-us-more">poznaj nas
+      bardziej</button>
+  </div>
+
+
+
+
+  <div class="center-header-about-us">
+    <h1 data-i18n="">W co wierzymy:</h1>
+  </div>
+
+
+
+  <section class="about-us-containers">
+    <div class="about-us-card">
+      <div class="about-us-title" data-i18n="">
+        Biblia
+      </div>
+      <p data-i18n="">Biblia jest natchnionym Słowem Bożym. </p>
+      <quote data-i18n="" class="verse-quote-about-us">
+        (2 Tymoteusza 3:16)</quote>
+    </div>
+
+    <div class="about-us-card">
+      <div class="about-us-title" data-i18n="">
+        Dzieło Chrystusa
+      </div>
+      <p data-i18n="">Chrystus umarł na krzyżu za nasze grzechy i zmartwychwstał trzeciego dnia. </p>
+      <quote data-i18n="" class="verse-quote-about-us">
+        (1 Koryntian 15:3-4)
+      </quote>
+      <p data-i18n="">Chrystus został wywyższony na miejsce po prawej ręce Boga.
+      </p>
+      <quote data-i18n="" class="verse-quote-about-us">
+        (Dzieje Apostolskie 2:33)
+      </quote>
+    </div>
+
+    <div class="about-us-card">
+      <div class="about-us-title" data-i18n="">
+        Bóg
+      </div>
+      <p data-i18n="">Bóg jest jeden, a zarazem Trójjedyny.
+      </p>
+      <quote data-i18n="" class="verse-quote-about-us">
+        (Mateusza 28:19)
+      </quote>
+    </div>
+
+    <div class="about-us-card">
+      <div class="about-us-title" data-i18n="">
+        Zbawienie
+      </div>
+      <p data-i18n="">Każdy, kto się nawróci i uwierzy w Pana Jezusa Chrystusa, rodzi się na nowo i staje się
+        członkiem Ciała Chrystusa.
+      </p>
+      <quote data-i18n="" class="verse-quote-about-us">
+        (Jana 3:3, Rzymian 12:5)
+      </quote>
+    </div>
+
+
+    <div class="about-us-card">
+      <div class="about-us-title" data-i18n="">
+        Chrystus
+      </div>
+      <p data-i18n="">Sam Bóg wcielił się, by stać się człowiekiem Jezusem Chrystusem.</p>
+
+      <quote data-i18n="" class="verse-quote-about-us">
+        (J 1:1, 14)
+      </quote>
+    </div>
+
+    <div class="about-us-card">
+      <div class="about-us-title" data-i18n="">
+        Ponowne przyjście Chrystusa
+      </div>
+      <p>Chrystus powróci, aby przyjąć wierzących do siebie.</p>
+      <quote data-i18n="" class="verse-quote-about-us">
+        (1 Tes 4:16-17)
+      </quote>
+    </div>
+
+
+  </section>
+
+  <div class="center" style="background-color: #ffe6d1;">
+    <button onclick="location.href='about.html'" class="cta-btn" style="  margin-bottom: 40px;"
+      data-i18n="know-us-more">poznaj nas
+      bardziej</button>
+  </div>
+
+
+
+
+
+  <section class="main-events-section">
+
+    <div class="center-header-events">
+      <span class="label-events">Co u nas</span>
+      <h1>Wydarzenia</h1>
+    </div>
+
+    <div class="events-carousel-wrapper">
+
+      <!-- LEFT -->
+      <button class="carousel-btn prev-btn">
+        ←
+      </button>
+
+      <!-- CAROUSEL -->
+      <div class="events-carousel" id="eventsCarousel">
+
+        <!-- CARD -->
+        <div class="meeting-card event-slide">
+          <div class="meeting-title">
+            Studiowanie Biblii SGGW
+          </div>
+          <p>
+            Wspólne czytanie i studiowanie Biblii
+          </p>
+          <div class="event-info">
+            <span>📍 SGGW - Biblioteka Główna</span>
+            <span>⏰ Poniedziałek · 16:00</span>
+          </div>
+          <div class="center">
+            <button onclick="location.href='formularz.html'" class="cta-btn">
+              Formularz
+            </button>
+          </div>
+        </div>
+        <!-- CARD -->
+        <div class="meeting-card event-slide">
+
+          <div class="meeting-title">
+            Studiowanie Biblii UW
+          </div>
+
+          <p>
+            Wspólne czytanie i studiowanie Biblii
+          </p>
+
+          <div class="event-info">
+            <span>📍 UW - ul.Dobra 55 (WLS)</span>
+            <span>⏰ Środa · 13:00</span>
+          </div>
+
+          <div class="center">
+            <button onclick="location.href='formularz.html'" class="cta-btn">
+              Formularz
+            </button>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="meeting-card event-slide">
+
+          <div class="meeting-title">
+            Spotkanie studenckie
+          </div>
+          <p>
+            Spotykamy się w każdy wtorek
+          </p>
+          <div class="event-info">
+            <span>📍 Obok SGGW</span>
+            <span>⏰ Wtorek · 18:00</span>
+          </div>
+
+          <div class="center">
+            <button onclick="location.href='formularz.html'" class="cta-btn">
+              Formularz
+            </button>
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="meeting-card event-slide">
+
+          <div class="meeting-title">
+            Spotkanie domowe
+          </div>
+          <p>
+            Wpadaj na grupę domową
+          </p>
+          <div class="event-info">
+            <span>📍 Ursynów, Wilanowska, ...</span>
+            <span>⏰ Czwartek/Piątek · 18:00/19:00</span>
+          </div>
+          <div class="center">
+            <button onclick="location.href='formularz.html'" class="cta-btn">
+              Formularz
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT -->
+      <button class="carousel-btn next-btn">
+        →
+      </button>
+    </div>
+    <div class="center">
+      <button onclick="location.href='events.html'" class="btn-events" style="border: 1px solid #8db8ff;">
+        Wszystkie wydarzenia →
+      </button>
+    </div>
+
+  </section>
+
+  <section class="contacts">
+
+    <a class="contact-item" href="https://www.instagram.com/cnu_warszawa/" target="_blank">
+      <i class="fa fa-instagram"></i>
+      <span>cnu.warszawa</span>
+    </a>
+    <a class="contact-item" href="https://www.facebook.com/share/18swFGHHTY/?mibextid=wwXIfr" target="_blank">
+      <i class="fa fa-facebook"></i>
+      <span>Chrześcijanie na Uczelniach</span>
+    </a>
+    <a class="contact-item" href="https://youtube.com/@chrzescijanienauczelniach?si=SWbZchQ-9XUdnxLL" target="_blank">
+      <i class="fa fa-youtube-play"></i>
+      <span>CNU</span>
+    </a>
+    <a class="contact-item" href="#" id="copy-email">
+      <i class="fa fa-envelope"></i>
+      <span>chrzescijanienauni@gmail.com</span>
+    </a>
+
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/translation.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/zoomin_hero_HP.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNU – Chrześcijanie na Uczelniach</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav id="mainNav">
+        <div class="nav-left">
+            <div class="lang-switcher">
+                <button data-lang="en" onclick="setLang('en')" id="lang-en">EN</button>
+                <span>|</span>
+                <button data-lang="pl" onclick="setLang('pl')" id="lang-pl">PL</button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" data-i18n="home">Home</a>
+                <a href="formularz.html" data-i18n="form">Form</a>
+                <a href="about.html" data-i18n="about">About</a>
+                <a href="events.html" data-i18n="events">Events</a>
+                <a href="special-event.html" data-i18n="special-event">Wydarzenie specjalne</a>
+            </div>
+
+            <button class="burger" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <section class="event-page-section">
+
+
+        <section class="events-section-cards">
+            <div class="events-section-header" style="align-content: start;">
+                <div>
+                    <span class="events-label">Co u nas</span>
+                    <h2>Najbliższe wydarzenia</h2>
+                </div>
+            </div>
+
+            <section class="modern-timeline-wrapper">
+
+                <!-- arrows -->
+
+                <button class="carousel-btn prev-btn" id="timelinePrev">
+                    ←
+                </button>
+
+                <button class="carousel-btn next-btn" id="timelineNext">
+                    →
+                </button>
+
+                <!-- THIS scrolls -->
+
+                <div class="modern-timeline-scroll">
+
+                    <div class="modern-timeline" id="modernTimeline">
+
+                        <div class="timeline-event">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <span class="timeline-day">MON</span>
+
+                                <h4>Bible Study</h4>
+
+                                <p>16:00 · SGGW</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-event">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <span class="timeline-day">TUE</span>
+
+                                <h4>Students</h4>
+
+                                <p>18:00 · Near SGGW</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-event active" id="todayEvent">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <span class="timeline-day">WED</span>
+
+                                <h4>Bible Study UW</h4>
+
+                                <p>13:00 · Dobra 55</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-event">
+                            <div class="timeline-dot"></div>
+
+                            <div class="timeline-content">
+                                <span class="timeline-day">THU</span>
+
+                                <h4>Home Meeting</h4>
+
+                                <p>19:00 · Ursynów</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="events-rail">
+
+                <div class="rail-item ">
+
+                    <div class="rail-top">
+                        <span class="rail-day">MONDAY</span>
+                        <span class="rail-time">16:00</span>
+                    </div>
+
+                    <h3>Studiowanie Biblii na SGGW</h3>
+
+                    <p>Biblioteka Główna</p>
+
+                </div>
+
+                <div class="rail-item">
+
+                    <div class="rail-top">
+                        <span class="rail-day">TUESDAY</span>
+                        <span class="rail-time">18:00</span>
+                    </div>
+
+                    <h3>Spotkanie studentskie</h3>
+
+                    <p>Obok SGGW</p>
+
+                </div>
+
+                <div class="rail-item">
+
+                    <div class="rail-top">
+                        <span class="rail-day">WEDNESDAY</span>
+                        <span class="rail-time">13:00</span>
+                    </div>
+
+                    <h3>Studiowanie Biblii na UW</h3>
+
+                    <p>ul. Dobra 55</p>
+
+                </div>
+
+                <div class="rail-item">
+
+                    <div class="rail-top">
+                        <span class="rail-day">THURSDAY</span>
+                        <span class="rail-time">19:00</span>
+                    </div>
+
+                    <h3>Spotkanie domowe</h3>
+
+                    <p>Ursynów</p>
+
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+
+    <section class="contacts">
+
+        <a class="contact-item" href="https://www.instagram.com/cnu_warszawa/" target="_blank">
+            <i class="fa fa-instagram"></i>
+            <span>cnu.warszawa</span>
+        </a>
+
+        <a class="contact-item" href="https://www.facebook.com/share/18swFGHHTY/?mibextid=wwXIfr" target="_blank">
+            <i class="fa fa-facebook"></i>
+            <span>Chrześcijanie na Uczelniach</span>
+        </a>
+
+        <a class="contact-item" href="https://youtube.com/@chrzescijanienauczelniach?si=SWbZchQ-9XUdnxLL"
+            target="_blank">
+            <i class="fa fa-youtube-play"></i>
+            <span>CNU</span>
+        </a>
+        <a class="contact-item" href="#" id="copy-email">
+            <i class="fa fa-envelope"></i>
+            <span>chrzescijanienauni@gmail.com</span>
+        </a>
+
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/translation.js"></script>
+    <script src="js/events.js"></script>
+</body>
+
+</html>

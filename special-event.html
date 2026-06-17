@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNU – Chrześcijanie na Uczelniach</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav id="mainNav">
+        <div class="nav-left">
+            <div class="lang-switcher">
+                <button data-lang="en" onclick="setLang('en')" id="lang-en">EN</button>
+                <span>|</span>
+                <button data-lang="pl" onclick="setLang('pl')" id="lang-pl">PL</button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" data-i18n="home">Home</a>
+                <a href="formularz.html" data-i18n="form">Form</a>
+                <a href="about.html" data-i18n="about">About</a>
+                <a href="events.html" data-i18n="events">Events</a>
+                <a href="special-event.html" data-i18n="special-event">Wydarzenie specjalne</a>
+            </div>
+
+            <button class="burger" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero special-event-hero">
+
+        <div class="special-event-bg">
+            <div class="special-event-poster"></div>
+        </div>
+    </header>
+
+    <header class="hero special-event-hero">
+
+        <div class="special-event-bg">
+            <div class="special-event-poster"></div>
+        </div>
+    </header>
+
+    <section class="contacts">
+
+        <a class="contact-item" href="https://www.instagram.com/cnu_warszawa/" target="_blank">
+            <i class="fa fa-instagram"></i>
+            <span>cnu.warszawa</span>
+        </a>
+
+        <a class="contact-item" href="https://www.facebook.com/share/18swFGHHTY/?mibextid=wwXIfr" target="_blank">
+            <i class="fa fa-facebook"></i>
+            <span>Chrześcijanie na Uczelniach</span>
+        </a>
+
+        <a class="contact-item" href="https://youtube.com/@chrzescijanienauczelniach?si=SWbZchQ-9XUdnxLL"
+            target="_blank">
+            <i class="fa fa-youtube-play"></i>
+            <span>CNU</span>
+        </a>
+        <a class="contact-item" href="#" id="copy-email">
+            <i class="fa fa-envelope"></i>
+            <span>chrzescijanienauni@gmail.com</span>
+        </a>
+
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/translation.js"></script>
+</body>
+
+</html>
