@@ -1,5 +1,5 @@
 let translations = {};
-let currentLang = localStorage.getItem("lang") || "en";
+let currentLang = localStorage.getItem("lang") || "pl";
 
 // --------------------
 // LOAD LANGUAGE FILE

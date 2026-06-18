@@ -263,7 +263,7 @@ a:hover {
   color: #0e3a5a;
   font-style: italic;
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .center-header h1 {
@@ -2282,6 +2282,7 @@ special event page
   font-size: 0.95rem;
   color: rgba(14, 58, 90, 0.8);
   line-height: 1.5;
+
 }
 
 
@@ -2381,4 +2382,54 @@ special event page
   box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
 
   transition: transform .3s ease;
+}
+
+.vision-box {
+  max-width: 100%;
+  padding: 40px 40px;
+  /*background:
+    linear-gradient(180deg,
+      #c4ddff 0%,
+      rgb(240, 235, 226) 35%,
+      #ffe6d1 100%);*/
+  background: #0e3a5a;
+  z-index: 100;
+
+}
+
+.vision-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #dce9ff;
+  margin: 0 0 16px 0;
+}
+
+.vision-box h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 18px 0 22px 0;
+  color: #ffe6d1;
+}
+
+
+
+.event-page-section.full .events-section-cards {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  display: block;
+  margin-top: 0;
+  /* ważne: wyłącza grid */
+}
+
+.special-event-description {
+  width: 100%;
+  max-width: none;
+  margin: 20px 0;
+}
+
+.special-event-description p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 100%;
 }
