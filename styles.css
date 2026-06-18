@@ -2219,3 +2219,43 @@ textarea {
   text-decoration: underline;
 
 }
+
+
+/*=====================
+special event page
+======================*/
+.special-event-card {
+  padding: 28px 24px;
+  border-top: 3px solid rgba(90, 66, 14, 0.12);
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+
+.special-event-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0e3a5a;
+  margin-bottom: 10px;
+}
+
+.special-event-subtitle {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(14, 58, 90, 0.7);
+  margin-bottom: 18px;
+}
+
+.special-event-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: rgba(14, 58, 90, 0.75);
+}
+
+.special-event-description {
+  font-size: 0.95rem;
+  color: rgba(14, 58, 90, 0.8);
+  line-height: 1.5;
+}
